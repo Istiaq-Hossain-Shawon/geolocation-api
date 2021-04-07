@@ -1,0 +1,11 @@
+server:
+    port: 8095
+    servlet:
+      context-path: /geolocation
+ 
+spring:
+  h2:
+    console:
+      enabled: true
+
+    
