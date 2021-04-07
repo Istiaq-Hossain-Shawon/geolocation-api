@@ -1,5 +1,9 @@
 package com.geolocation.api.config.security;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -11,6 +15,9 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.CorsConfigurationSource;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
 import com.geolocation.api.config.util.JwtRequestFilter;
 import com.geolocation.api.service.MyUserDetailsService;
@@ -57,7 +64,21 @@ public class SecurityConfigurer extends WebSecurityConfigurerAdapter{
 		
 		
 		httpSecurity.addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class);
+		
+		httpSecurity.cors().configurationSource(corsConfigurationSource());
 
+	}
+	CorsConfigurationSource corsConfigurationSource() {
+	    CorsConfiguration configuration = new CorsConfiguration();
+	    List<String> allowOrigins = Arrays.asList("*");
+	    configuration.setAllowedOrigins(allowOrigins);
+	    configuration.setAllowedMethods(Collections.singletonList("*"));
+	    configuration.setAllowedHeaders(Collections.singletonList("*"));
+	    //in case authentication is enabled this flag MUST be set, otherwise CORS requests will fail
+	    configuration.setAllowCredentials(false);
+	    UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+	    source.registerCorsConfiguration("/**", configuration);
+	    return source;
 	}
 
 	

@@ -30,7 +30,7 @@ public class JwtTokenAuth {
 	@Autowired
 	private MyUserDetailsService userDetailsService;
 
-	@CrossOrigin(origins = "*", maxAge = 3600)
+	
 	@RequestMapping(value = "/requesttoken", method = RequestMethod.POST)
 	public ResponseEntity<?> createAuthenticationToken(@RequestBody AuthenticationRequest authenticationRequest) throws Exception {
 
