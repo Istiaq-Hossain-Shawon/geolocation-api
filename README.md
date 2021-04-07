@@ -40,14 +40,33 @@ Post
 
 This include 2 api endpoint.These are:
 
-#### geolocation/requesttoken
-
+#### geolocation/requesttoken[POST]
+ * **Url**:
 ```
 http://localhost:8095/geolocation/requesttoken
 ```
+ * **Body**:
+ ```
+ {
+    "username":"user1",
+    "password":"123456"
+}
+    
+   ```
+   * **Response**:
+ ```
+{
+    "jwt": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTYxNzgyNjU4MiwiaWF0IjoxNjE3NzkwNTgyfQ.g1Z8_BxbTmq07vpsPU5ppuLSv8Mmqa2IAf445hI2BFQ"
+}
+    
+   ```
 
-#### geolocation/location
+#### geolocation/location[GET]
+
+* **Url**:
 ```
 http://localhost:8095/geolocation/location
 ```
+ * **Body**:{}
+ * Add Bearer Token from previous api
 
