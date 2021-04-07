@@ -3,9 +3,9 @@
 
 ## Introduction
 
-This is a spring boot  example code for using  RESTful API to get geolocation of 5 districts in bangldesh.
+This is a spring boot  example code for using  RESTful API to get geolocation of 5 districts in bangladesh.
 
-This example is written in Java using spring-boot-starter-data-jpa,h2database,jwt
+This example is written in Java using spring-boot-jpa,h2database,jwt,rest api,spring security
 
 
 
@@ -68,5 +68,41 @@ http://localhost:8095/geolocation/requesttoken
 http://localhost:8095/geolocation/location
 ```
  * **Body**:{}
- * Add Bearer Token from previous api
-
+ * Add Bearer Token from previous api in Authorization
+   ```
+   * **Response**:
+ ```
+[
+    {
+        "id": 1,
+        "name": "Mohakhali, Dhaka, Bangladesh",
+        "latitude": "23.777628",
+        "longitude": "90.405449"
+    },
+    {
+        "id": 2,
+        "name": "Barisal District",
+        "latitude": "22.7022",
+        "longitude": "90.3696"
+    },
+    {
+        "id": 3,
+        "name": "Chittagong District",
+        "latitude": "22.5150",
+        "longitude": "91.7539"
+    },
+    {
+        "id": 4,
+        "name": "Comilla  District",
+        "latitude": "23.4576",
+        "longitude": "91.1809"
+    },
+    {
+        "id": 5,
+        "name": "Tangail  District",
+        "latitude": "24.3917",
+        "longitude": "89.9948"
+    }
+]
+    
+   ```
