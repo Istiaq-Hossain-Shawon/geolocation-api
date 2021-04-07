@@ -9,7 +9,7 @@ import javax.persistence.Table;
 public class Geolocation {
 
 	@Id
-	private Long id;
+	private int id;
 
 	private String name;
 
@@ -17,11 +17,11 @@ public class Geolocation {
 	
 	private String longitude;
 
-	public Long getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
@@ -48,6 +48,9 @@ public class Geolocation {
 	public void setLongitude(String longitude) {
 		this.longitude = longitude;
 	} 
+	public Geolocation(){
+		   
+	}
 	
 	
 }

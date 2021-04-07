@@ -43,6 +43,7 @@ public class GeolocationService {
 		if (check == null) {
 			var GeolocationEntiry = new Geolocation();
 			BeanUtils.copyProperties(geolocationDto, GeolocationEntiry);
+			GeolocationEntiry.setId(geolocationDto.getId());
 			geolocationRepository.save(GeolocationEntiry);
 		} else {
 			throw new ResourceAlreadyExistsException("This geoLocation already existed");
