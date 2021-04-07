@@ -68,41 +68,40 @@ http://localhost:8095/geolocation/requesttoken
 http://localhost:8095/geolocation/location
 ```
  * **Body**:{}
- * Add Bearer Token from previous api in Authorization
-   ```
-   * **Response**:
+ * **Add Bearer Token from previous api in Authorization**:
+ * **Response**:
  ```
-[
-    {
-        "id": 1,
-        "name": "Mohakhali, Dhaka, Bangladesh",
-        "latitude": "23.777628",
-        "longitude": "90.405449"
-    },
-    {
-        "id": 2,
-        "name": "Barisal District",
-        "latitude": "22.7022",
-        "longitude": "90.3696"
-    },
-    {
-        "id": 3,
-        "name": "Chittagong District",
-        "latitude": "22.5150",
-        "longitude": "91.7539"
-    },
-    {
-        "id": 4,
-        "name": "Comilla  District",
-        "latitude": "23.4576",
-        "longitude": "91.1809"
-    },
-    {
-        "id": 5,
-        "name": "Tangail  District",
-        "latitude": "24.3917",
-        "longitude": "89.9948"
-    }
-]
+ [
+     {
+         "id": 1,
+         "name": "Mohakhali, Dhaka, Bangladesh",
+         "latitude": "23.777628",
+         "longitude": "90.405449"
+     },
+     {
+         "id": 2,
+         "name": "Barisal District",
+         "latitude": "22.7022",
+         "longitude": "90.3696"
+     },
+     {
+         "id": 3,
+         "name": "Chittagong District",
+         "latitude": "22.5150",
+         "longitude": "91.7539"
+     },
+     {
+         "id": 4,
+         "name": "Comilla  District",
+         "latitude": "23.4576",
+         "longitude": "91.1809"
+     },
+     {
+         "id": 5,
+         "name": "Tangail  District",
+         "latitude": "24.3917",
+         "longitude": "89.9948"
+     }
+ ]
     
    ```
