@@ -35,7 +35,6 @@ Maven > Update Project...
 
 #### Step 3: Run Java application
 
-Post
 ## Api Documentation
 
 This include 2 api endpoints.These are:
