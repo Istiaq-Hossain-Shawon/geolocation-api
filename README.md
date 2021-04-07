@@ -38,9 +38,9 @@ Maven > Update Project...
 Post
 ## Api Documentation
 
-This include 2 api endpoint.These are:
+This include 2 api endpoints.These are:
 
-#### geolocation/requesttoken[POST]
+#### 1.geolocation/requesttoken[POST]
  * **Url**:
 ```
 http://localhost:8095/geolocation/requesttoken
@@ -61,7 +61,7 @@ http://localhost:8095/geolocation/requesttoken
     
    ```
 
-#### geolocation/location[GET]
+#### 2.geolocation/location[GET]
 
 * **Url**:
 ```
