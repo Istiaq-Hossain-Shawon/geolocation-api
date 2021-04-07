@@ -11,6 +11,8 @@ This example is written in Java using spring-boot-jpa,h2database,jwt,rest api,sp
 
 ## Getting started
 
+
+
 Follow these steps to get started:
 
 #### Step 1: Configuring Eclipse IDE for Java
@@ -18,7 +20,14 @@ Follow these steps to get started:
 You need to download the last version of Eclipse IDE for Java EE Developers, for example [Lunar](https://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/lunasr2) version. Make sure that Eclipse has installed the Maven plugin.
 
 
-#### Step 2: Import Maven Project into Eclipse
+#### Step 2: Clone this repository
+
+```bash
+$ git clone https://github.com/Istiaq-Hossain-Shawon/geolocation-api 
+
+```
+
+#### Step 3: Import geolocation-api  Maven Project into Eclipse
 
 To import an existing Maven project into Eclipse, just right-click the Package Explorer and go to:
 
@@ -33,7 +42,7 @@ Maven > Update Project...
 `
 
 
-#### Step 3: Run Java application
+#### Step 4: Run Java application
 
 ## Api Documentation
 
