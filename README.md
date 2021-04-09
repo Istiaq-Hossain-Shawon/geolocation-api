@@ -1,17 +1,29 @@
 
-# geolocation RESTful API - Java Spring boot
-
-## Introduction
-
-This is a spring boot  example code for using  RESTful API to get geolocation of 5 districts in bangladesh.
-
-This example is written in Java using spring-boot-jpa,h2database,jwt,rest api,spring security
-
-
 
 ## Getting started
 
 
+#### Using Maven :
+
+Follow these steps to get started:
+
+#### Step 1: Clone this repository
+
+```bash
+$ git clone https://github.com/Istiaq-Hossain-Shawon/geolocation-api 
+
+```
+#### Step 2: Go to project root directory and open cmd
+
+#### Step 3: Build Spring Boot Project with Maven
+```bash
+mvn install 
+```
+#### Step 4: Run Spring Boot app using Maven:
+```bash
+mvn spring-boot:run
+
+```
 
 Follow these steps to get started:
 
