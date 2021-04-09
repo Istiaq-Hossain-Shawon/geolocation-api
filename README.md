@@ -24,7 +24,7 @@ mvn install
 mvn spring-boot:run
 
 ```
-### Using Eclipse:
+### Run Using Eclipse:
 
 Follow these steps to get started:
 
