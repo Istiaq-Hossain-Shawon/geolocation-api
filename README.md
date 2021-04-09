@@ -1,7 +1,7 @@
 
 ## Demo
 
-Live URL API:https://nameless-plains-51062.herokuapp.com/geolocation/
+Live URL API : https://nameless-plains-51062.herokuapp.com/geolocation/
 
 Live URL Angular : https://geolocation-web.herokuapp.com/
 
