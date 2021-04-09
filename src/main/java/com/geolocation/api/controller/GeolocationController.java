@@ -27,6 +27,12 @@ public class GeolocationController {
 		List<Geolocation> data=geoLocationService.getAll();
 		return data;
 	}
+	
+	@GetMapping(value = {"/home"})
+	public String  home() {
+		
+		return "Api is running.Please follow api documentation for next procedure. ";
+	}
 
 
 

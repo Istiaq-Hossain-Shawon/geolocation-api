@@ -56,7 +56,8 @@ public class SecurityConfigurer extends WebSecurityConfigurerAdapter{
 		
 		
 		httpSecurity.csrf().disable()
-				.authorizeRequests().antMatchers("/requesttoken").permitAll().
+				.authorizeRequests().antMatchers("/home").permitAll().
+				antMatchers("/requesttoken").permitAll().
 						anyRequest().authenticated().and().
 						exceptionHandling().and().sessionManagement()
 				.sessionCreationPolicy(SessionCreationPolicy.STATELESS);
@@ -66,6 +67,10 @@ public class SecurityConfigurer extends WebSecurityConfigurerAdapter{
 		httpSecurity.addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class);
 		
 		httpSecurity.cors().configurationSource(corsConfigurationSource());
+		
+		httpSecurity.requiresChannel()
+	      .requestMatchers(r -> r.getHeader("X-Forwarded-Proto") != null)
+	      .requiresSecure();
 
 	}
 	CorsConfigurationSource corsConfigurationSource() {
